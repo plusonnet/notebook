@@ -13,7 +13,8 @@
     "bower": "bower install",
     "build": "python setup.py js css",
     "build:watch": "npm run watch",
-    "watch": "onchange 'notebook/static/**/!(*.min).js' 'notebook/static/**/*.less' 'bower.json' -- npm run build"
+    "watch": "onchange 'notebook/static/**/!(*.min).js' 'notebook/static/**/*.less' 'bower.json' -- npm run build",
+    "test": "node scripts/setup.js"
   },
   "devDependencies": {
     "bower": "^1.8.8",
